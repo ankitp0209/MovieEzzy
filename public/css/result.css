@@ -1,0 +1,30 @@
+.row {
+    margin: 8px auto ;
+}
+.card {
+    margin: 8px auto;
+    width: 30%;
+    background-color: rgb(218, 251, 168);
+    background: -webkit-radial-gradient( aquamarine, #d3f3f6 , aquamarine);
+    background: -moz-radial-gradient( aquamarine, #d3f3f6 , aquamarine);
+    background: radial-gradient(rgb(119, 236, 197), #d3f3f6 , aquamarine) ;
+}
+.content-card {
+    width: 18rem ;
+    margin: 0 auto ;
+    text-align: center;
+}
+.header {
+    margin: 8px auto;
+    width: 100vw;
+    border-top: 4px solid rgb(5, 139, 248);
+    border-bottom: 4px solid rgb(5, 139, 248);
+}
+.header h1 {
+    padding-top: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}

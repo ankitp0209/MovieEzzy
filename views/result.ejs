@@ -1,0 +1,30 @@
+<%- include("./partials/header") %>
+        <head>
+          <link rel="stylesheet" href="../public/css/result.css">
+        </head>
+        <% if (movieData.Response === 'False') { %>
+              <h2> Movie Not Found </h2>
+        <% } else { %>
+            <div class="header">
+              <h1> Results are: </h1> 
+            </div>
+            <div class = "row" >
+              <% movieData['Search'].forEach(function (movie) { %>
+                <div class="card" >
+                    <div class="content-card">
+                        <img src="<%=movie.Poster%>" class="card-img-top" alt="No Poster Available" style="width: 18rem; 
+                        height: 27rem;">
+                        <div class="card-body" style="width: 18rem; height: 9rem;">
+                        <h5 class="card-title"><%=movie.Title%></h5>
+                        <p><%= movie.Plot %></p>
+                        
+                        <a href="/result/<%=movie.imdbID%>" class="btn btn-primary">See More</a>
+                      </div>
+                    </div>
+                  </div>
+              <% }) %> 
+            </div>
+            
+          <% } %>
+     
+<%- include("./partials/footer") %>        

@@ -1,0 +1,22 @@
+.header {
+    margin: 8px auto;
+    padding: 4px;
+    border-top: 8px solid aquamarine;
+}
+.header h1{
+    font-size: 64px;
+    color: rgb(2, 113, 128);
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+}
+.para {
+    margin: 8px auto;
+    padding: 4px;
+    border-bottom: 8px solid aquamarine;
+}
+.para p{
+    font-size: 26px;
+    color: rgba(19, 65, 95, 0.644);
+}
